@@ -136,7 +136,7 @@ html {
 
 /* Section Container */
 .section-container {
-  padding: 30px 20px;
+  padding: 70px 20px;
 }
 
 .section-container h2 {
@@ -231,7 +231,40 @@ form {
   width: 300px;
 }
 input[type="text"] {
-  height: 25px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  padding: 7px;
+}
+
+textarea {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-form {
+  background-color: blue;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  filter: brightness(90%);
+}
+.btn-form:active {
+  transform: scale(0.98);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
 }
 
 .contact-info-unit {
@@ -243,4 +276,159 @@ input[type="text"] {
 
 .icon-text p {
   margin: 0 9px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: rgb(53, 53, 159);
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social li {
+  margin: 5px 7px;
+}
+
+.footer-social li i {
+  font-size: 1.4rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin: 5px 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-text {
+  display: flex;
+}
+
+.footer-text p {
+  margin: 5px 9px;
+}
+
+/* Solo place page */
+
+.nav-bar-place {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.nav-bar-place a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links-place {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.nav-links-place li {
+  margin: 0 20px;
+}
+
+.nav-links-place li a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+/* Solo place Header */
+
+.solo-place-header {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(rgba(137, 137, 233, 0), rgba(113, 165, 216, 0)),
+    url("./ilopango/20210130_135810-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.place-description {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 70px;
+}
+
+.place-description img {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 24px 11px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 2px 24px 11px rgba(0, 0, 0, 0.29);
+}
+
+.place-description-text {
+  width: 70%;
+  padding: 30px;
+}
+
+iframe {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+/* Sobre el sitio page */
+.about-header {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(rgba(137, 137, 233, 0), rgba(113, 165, 216, 0)),
+    url("./images/Things-to-do-in-Suchitoto-El-Salvador-1250x833.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.about-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.about-author ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-author ul li {
+  list-style: none;
+  margin: 5px 10px;
+  font-size: 1.2rem;
+}
+
+.about-author img {
+  width: 18%;
+  height: 230px;
+  border-radius: 50%;
 }
